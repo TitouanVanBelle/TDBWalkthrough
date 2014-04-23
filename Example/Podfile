@@ -1,0 +1,7 @@
+pod "TDBWalkthrough", :path => "../"
+
+target "Demo" do
+end
+
+target "DemoTests" do
+end
