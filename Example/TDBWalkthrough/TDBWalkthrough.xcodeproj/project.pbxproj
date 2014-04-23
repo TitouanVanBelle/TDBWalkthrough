@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F32423C7190820B700F3FD4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F32423C6190820B700F3FD4F /* Foundation.framework */; };
+		F32423C9190820B700F3FD4F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F32423C8190820B700F3FD4F /* CoreGraphics.framework */; };
+		F32423CB190820B700F3FD4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F32423CA190820B700F3FD4F /* UIKit.framework */; };
+		F32423D1190820B700F3FD4F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F32423CF190820B700F3FD4F /* InfoPlist.strings */; };
+		F32423D3190820B700F3FD4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F32423D2190820B700F3FD4F /* main.m */; };
+		F32423D7190820B700F3FD4F /* TDBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F32423D6190820B700F3FD4F /* TDBAppDelegate.m */; };
+		F32423D9190820B700F3FD4F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F32423D8190820B700F3FD4F /* Images.xcassets */; };
+		F32423E0190820B700F3FD4F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F32423DF190820B700F3FD4F /* XCTest.framework */; };
+		F32423E1190820B700F3FD4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F32423C6190820B700F3FD4F /* Foundation.framework */; };
+		F32423E2190820B700F3FD4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F32423CA190820B700F3FD4F /* UIKit.framework */; };
+		F32423EA190820B700F3FD4F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F32423E8190820B700F3FD4F /* InfoPlist.strings */; };
+		F32423EC190820B700F3FD4F /* TDBWalkthroughTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F32423EB190820B700F3FD4F /* TDBWalkthroughTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F32423E3190820B700F3FD4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F32423BB190820B700F3FD4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F32423C2190820B700F3FD4F;
+			remoteInfo = TDBWalkthrough;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F32423C3190820B700F3FD4F /* TDBWalkthrough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDBWalkthrough.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32423C6190820B700F3FD4F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F32423C8190820B700F3FD4F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F32423CA190820B700F3FD4F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F32423CE190820B700F3FD4F /* TDBWalkthrough-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TDBWalkthrough-Info.plist"; sourceTree = "<group>"; };
+		F32423D0190820B700F3FD4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F32423D2190820B700F3FD4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F32423D4190820B700F3FD4F /* TDBWalkthrough-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TDBWalkthrough-Prefix.pch"; sourceTree = "<group>"; };
+		F32423D5190820B700F3FD4F /* TDBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDBAppDelegate.h; sourceTree = "<group>"; };
+		F32423D6190820B700F3FD4F /* TDBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDBAppDelegate.m; sourceTree = "<group>"; };
+		F32423D8190820B700F3FD4F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F32423DE190820B700F3FD4F /* TDBWalkthroughTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDBWalkthroughTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32423DF190820B700F3FD4F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F32423E7190820B700F3FD4F /* TDBWalkthroughTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TDBWalkthroughTests-Info.plist"; sourceTree = "<group>"; };
+		F32423E9190820B700F3FD4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F32423EB190820B700F3FD4F /* TDBWalkthroughTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDBWalkthroughTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F32423C0190820B700F3FD4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32423C9190820B700F3FD4F /* CoreGraphics.framework in Frameworks */,
+				F32423CB190820B700F3FD4F /* UIKit.framework in Frameworks */,
+				F32423C7190820B700F3FD4F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32423DB190820B700F3FD4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32423E0190820B700F3FD4F /* XCTest.framework in Frameworks */,
+				F32423E2190820B700F3FD4F /* UIKit.framework in Frameworks */,
+				F32423E1190820B700F3FD4F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F32423BA190820B700F3FD4F = {
+			isa = PBXGroup;
+			children = (
+				F32423CC190820B700F3FD4F /* TDBWalkthrough */,
+				F32423E5190820B700F3FD4F /* TDBWalkthroughTests */,
+				F32423C5190820B700F3FD4F /* Frameworks */,
+				F32423C4190820B700F3FD4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F32423C4190820B700F3FD4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F32423C3190820B700F3FD4F /* TDBWalkthrough.app */,
+				F32423DE190820B700F3FD4F /* TDBWalkthroughTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F32423C5190820B700F3FD4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F32423C6190820B700F3FD4F /* Foundation.framework */,
+				F32423C8190820B700F3FD4F /* CoreGraphics.framework */,
+				F32423CA190820B700F3FD4F /* UIKit.framework */,
+				F32423DF190820B700F3FD4F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F32423CC190820B700F3FD4F /* TDBWalkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				F32423D5190820B700F3FD4F /* TDBAppDelegate.h */,
+				F32423D6190820B700F3FD4F /* TDBAppDelegate.m */,
+				F32423D8190820B700F3FD4F /* Images.xcassets */,
+				F32423CD190820B700F3FD4F /* Supporting Files */,
+			);
+			path = TDBWalkthrough;
+			sourceTree = "<group>";
+		};
+		F32423CD190820B700F3FD4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F32423CE190820B700F3FD4F /* TDBWalkthrough-Info.plist */,
+				F32423CF190820B700F3FD4F /* InfoPlist.strings */,
+				F32423D2190820B700F3FD4F /* main.m */,
+				F32423D4190820B700F3FD4F /* TDBWalkthrough-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F32423E5190820B700F3FD4F /* TDBWalkthroughTests */ = {
+			isa = PBXGroup;
+			children = (
+				F32423EB190820B700F3FD4F /* TDBWalkthroughTests.m */,
+				F32423E6190820B700F3FD4F /* Supporting Files */,
+			);
+			path = TDBWalkthroughTests;
+			sourceTree = "<group>";
+		};
+		F32423E6190820B700F3FD4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F32423E7190820B700F3FD4F /* TDBWalkthroughTests-Info.plist */,
+				F32423E8190820B700F3FD4F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F32423C2190820B700F3FD4F /* TDBWalkthrough */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F32423EF190820B700F3FD4F /* Build configuration list for PBXNativeTarget "TDBWalkthrough" */;
+			buildPhases = (
+				F32423BF190820B700F3FD4F /* Sources */,
+				F32423C0190820B700F3FD4F /* Frameworks */,
+				F32423C1190820B700F3FD4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TDBWalkthrough;
+			productName = TDBWalkthrough;
+			productReference = F32423C3190820B700F3FD4F /* TDBWalkthrough.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F32423DD190820B700F3FD4F /* TDBWalkthroughTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F32423F2190820B700F3FD4F /* Build configuration list for PBXNativeTarget "TDBWalkthroughTests" */;
+			buildPhases = (
+				F32423DA190820B700F3FD4F /* Sources */,
+				F32423DB190820B700F3FD4F /* Frameworks */,
+				F32423DC190820B700F3FD4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F32423E4190820B700F3FD4F /* PBXTargetDependency */,
+			);
+			name = TDBWalkthroughTests;
+			productName = TDBWalkthroughTests;
+			productReference = F32423DE190820B700F3FD4F /* TDBWalkthroughTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F32423BB190820B700F3FD4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TDB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = 3dB;
+				TargetAttributes = {
+					F32423DD190820B700F3FD4F = {
+						TestTargetID = F32423C2190820B700F3FD4F;
+					};
+				};
+			};
+			buildConfigurationList = F32423BE190820B700F3FD4F /* Build configuration list for PBXProject "TDBWalkthrough" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F32423BA190820B700F3FD4F;
+			productRefGroup = F32423C4190820B700F3FD4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F32423C2190820B700F3FD4F /* TDBWalkthrough */,
+				F32423DD190820B700F3FD4F /* TDBWalkthroughTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F32423C1190820B700F3FD4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32423D1190820B700F3FD4F /* InfoPlist.strings in Resources */,
+				F32423D9190820B700F3FD4F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32423DC190820B700F3FD4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32423EA190820B700F3FD4F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F32423BF190820B700F3FD4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32423D3190820B700F3FD4F /* main.m in Sources */,
+				F32423D7190820B700F3FD4F /* TDBAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32423DA190820B700F3FD4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32423EC190820B700F3FD4F /* TDBWalkthroughTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F32423E4190820B700F3FD4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F32423C2190820B700F3FD4F /* TDBWalkthrough */;
+			targetProxy = F32423E3190820B700F3FD4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F32423CF190820B700F3FD4F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F32423D0190820B700F3FD4F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F32423E8190820B700F3FD4F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F32423E9190820B700F3FD4F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F32423ED190820B700F3FD4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F32423EE190820B700F3FD4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F32423F0190820B700F3FD4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TDBWalkthrough/TDBWalkthrough-Prefix.pch";
+				INFOPLIST_FILE = "TDBWalkthrough/TDBWalkthrough-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F32423F1190820B700F3FD4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TDBWalkthrough/TDBWalkthrough-Prefix.pch";
+				INFOPLIST_FILE = "TDBWalkthrough/TDBWalkthrough-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F32423F3190820B700F3FD4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TDBWalkthrough.app/TDBWalkthrough";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TDBWalkthrough/TDBWalkthrough-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TDBWalkthroughTests/TDBWalkthroughTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F32423F4190820B700F3FD4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TDBWalkthrough.app/TDBWalkthrough";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TDBWalkthrough/TDBWalkthrough-Prefix.pch";
+				INFOPLIST_FILE = "TDBWalkthroughTests/TDBWalkthroughTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F32423BE190820B700F3FD4F /* Build configuration list for PBXProject "TDBWalkthrough" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32423ED190820B700F3FD4F /* Debug */,
+				F32423EE190820B700F3FD4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F32423EF190820B700F3FD4F /* Build configuration list for PBXNativeTarget "TDBWalkthrough" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32423F0190820B700F3FD4F /* Debug */,
+				F32423F1190820B700F3FD4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F32423F2190820B700F3FD4F /* Build configuration list for PBXNativeTarget "TDBWalkthroughTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32423F3190820B700F3FD4F /* Debug */,
+				F32423F4190820B700F3FD4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F32423BB190820B700F3FD4F /* Project object */;
+}
