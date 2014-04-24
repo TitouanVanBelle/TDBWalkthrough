@@ -26,33 +26,16 @@
     return YES;
 }
 
-- (void)showTDBFullImage
+
+#pragma mark - TDBWalkthroughDelegate Methods
+
+- (void)didPressButtonWithTag:(NSInteger)tag
 {
-    TDBWalkthrough *walkthrough = [TDBWalkthrough sharedInstance];
-
-    NSArray *images = [NSArray arrayWithObjects:
-                       [UIImage imageNamed:@"hand.png"],
-                       [UIImage imageNamed:@"hand.png"],
-                       [UIImage imageNamed:@"hand.png"],
-                       [UIImage imageNamed:@"hand.png"], nil];
-    
-    NSArray *descriptions = [NSArray arrayWithObjects:
-                             @"Find all the electronic music events around you",
-                             @"Filter by cost, date and genre to get relevant results",
-                             @"Get all the details for every events in your city",
-                             @"Follow artists to get accurate suggestions in the future",
-                             nil];
-    
-    walkthrough.descriptions = descriptions;
-    walkthrough.images = images;
-    walkthrough.className = @"TDBFullImage";
-    walkthrough.nibName = @"TDBFullImage";
-    
-    walkthrough.walkthroughViewController.view.backgroundColor = [UIColor colorWithRed:0.94 green:0.94 blue:0.94 alpha:1];
-    
-    [walkthrough show];
-
+    [[TDBWalkthrough sharedInstance] dismiss];
 }
+
+
+#pragma mark - Examples Initialization Methods
 
 - (void)showTDBSimpleWhite
 {
@@ -75,11 +58,11 @@
     walkthrough.images = images;
     walkthrough.className = @"TDBSimpleWhite";
     walkthrough.nibName = @"TDBSimpleWhite";
-    
+    walkthrough.delegate = self;
     
     //page control
     UIPageControl *pc = [[UIPageControl alloc] initWithFrame:CGRectMake(100, 518, 120, 30)];
-    pc.numberOfPages = 2;
+    pc.numberOfPages = 4;
     pc.currentPage = 0;
     pc.pageIndicatorTintColor = [UIColor lightGrayColor];
     pc.currentPageIndicatorTintColor = [UIColor darkGrayColor];
@@ -90,6 +73,37 @@
     [walkthrough show];
 
 }
+
+
+- (void)showTDBFullImage
+{
+    TDBWalkthrough *walkthrough = [TDBWalkthrough sharedInstance];
+    
+    NSArray *images = [NSArray arrayWithObjects:
+                       [UIImage imageNamed:@"hand.png"],
+                       [UIImage imageNamed:@"hand.png"],
+                       [UIImage imageNamed:@"hand.png"],
+                       [UIImage imageNamed:@"hand.png"], nil];
+    
+    NSArray *descriptions = [NSArray arrayWithObjects:
+                             @"Find all the electronic music events around you",
+                             @"Filter by cost, date and genre to get relevant results",
+                             @"Get all the details for every events in your city",
+                             @"Follow artists to get accurate suggestions in the future",
+                             nil];
+    
+    walkthrough.descriptions = descriptions;
+    walkthrough.images = images;
+    walkthrough.className = @"TDBFullImage";
+    walkthrough.nibName = @"TDBFullImage";
+    
+    walkthrough.walkthroughViewController.view.backgroundColor = [UIColor colorWithRed:0.94 green:0.94 blue:0.94 alpha:1];
+    
+    [walkthrough show];
+}
+
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

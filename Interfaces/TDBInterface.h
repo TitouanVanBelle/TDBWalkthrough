@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TDBWalkthrough.h"
 
 @interface TDBInterface : UIViewController
+
+@property (strong, nonatomic) NSObject<TDBWalkthroughDelegate>* delegate;
+
 
 - (void)setupWithImage:(UIImage *)image andText:(NSString *)text;
 

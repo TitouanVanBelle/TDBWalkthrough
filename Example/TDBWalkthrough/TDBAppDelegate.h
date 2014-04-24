@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TDBWalkthrough.h"
 
-@interface TDBAppDelegate : UIResponder <UIApplicationDelegate>
+@interface TDBAppDelegate : UIResponder <UIApplicationDelegate, TDBWalkthroughDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

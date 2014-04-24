@@ -6,10 +6,13 @@
 //  Copyright (c) 2014 3dB. All rights reserved.
 //
 
+#import "TDBWalkthrough.h"
 #import "TDBWalkThroughViewController.h"
 #import "TDBInterface.h"
 
 @interface TDBWalkthroughViewController ()
+
+@property (strong, nonatomic) TDBInterface *currentSlide;
 
 @end
 
@@ -54,8 +57,15 @@
         TDBInterface *slide = [[NSClassFromString(className) alloc] initWithNibName:nibName bundle:nil];
         [slide setupWithImage:[images objectAtIndex:i] andText:[descriptions objectAtIndex:i]];
         
+        slide.delegate = [[TDBWalkthrough sharedInstance] delegate];
+        
         slide.view.frame = CGRectMake(width * i, 0, width, height);
+        
         [self.scrollView addSubview:slide.view];
+        
+        if (i == 0) {
+            self.currentSlide = slide;
+        }
     }
     
     self.scrollView.contentSize = CGSizeMake(width * nbSlides, height);
@@ -70,8 +80,16 @@
 {
     // Update the page when more than 50% of the previous/next page is visible
     CGFloat pageWidth = self.scrollView.frame.size.width;
-    int page = floor((self.scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+    NSInteger page = floor((self.scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
     self.pageControl.currentPage = page;
+}
+
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    CGFloat pageWidth = self.scrollView.frame.size.width;
+    NSInteger page = floor((self.scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+    self.currentSlide = (TDBInterface *)[self.scrollView.subviews[page] nextResponder];
 }
 
 

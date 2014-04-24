@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "TDBInterface.h"
+#import "TDBWalkthrough.h"
 
 @interface TDBSimpleWhite : TDBInterface <UIScrollViewDelegate>
+
+- (IBAction)getStarted:(UIButton *)sender;
 
 @end

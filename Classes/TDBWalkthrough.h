@@ -9,7 +9,18 @@
 #import <Foundation/Foundation.h>
 #import "TDBWalkThroughViewController.h"
 
+@protocol TDBWalkthroughDelegate
+
+@optional
+- (void)didPressButtonWithTag:(NSInteger)tag;
+
+@end
+
+
+
 @interface TDBWalkthrough : NSObject
+
+@property (strong, nonatomic) NSObject<TDBWalkthroughDelegate>* delegate;
 
 @property (strong, nonatomic) TDBWalkthroughViewController *walkthroughViewController;
 
