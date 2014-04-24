@@ -11,6 +11,6 @@ EXTERNAL SOURCES:
     :git: git@github.com:TitouanVanBelle/TDBWalkthrough.git
 
 SPEC CHECKSUMS:
-  TDBWalkthrough: 7712fa2fa38212d69e7dee26704c902158a51797
+  TDBWalkthrough: 486beb5a01a040d92674fed9065295d3f8eb7c9b
 
 COCOAPODS: 0.32.1

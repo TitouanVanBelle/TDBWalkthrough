@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/TitouanVanBelle/TDBWalkthrough.git", :tag => "1.0.0" }
 
   s.source_files = 'Classes/*.{h,m}'
-  s.resources = ["images/*.png", "classes/MyView.xib"]
+  s.resources = 'Interfaces/*.{xib}'
 
   s.platform = :ios, '7.0'
   s.ios.deployment_target = '7.0'
