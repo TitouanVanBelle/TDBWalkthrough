@@ -7,6 +7,7 @@
 //
 
 #import "TDBAppDelegate.h"
+#import "TDBWalkthrough.h"
 
 @implementation TDBAppDelegate
 
@@ -16,6 +17,37 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    UIViewController *viewController = [[UIViewController alloc] initWithNibName:nil bundle:nil];
+    self.window.rootViewController = viewController;
+    
+    TDBWalkthrough *walkthrough = [TDBWalkthrough sharedInstance];
+    
+    NSArray *images = [NSArray arrayWithObjects:
+                       [UIImage imageNamed:@"first.png"],
+                       [UIImage imageNamed:@"second.png"], nil];
+    
+    NSArray *descriptions = [NSArray arrayWithObjects:
+                             @"Find all the electronic music events around you",
+                             @"Filter by cost, date and genre to get relevant results",
+                             nil];
+    
+    walkthrough.descriptions = descriptions;
+    walkthrough.images = images;
+    walkthrough.className = @"TDBSimpleWhite";
+    walkthrough.nibName = @"TDBSimpleWhite";
+    
+    
+    //page control
+    walkthrough.walkthroughViewController.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(100, 518, 120, 30)];
+    walkthrough.walkthroughViewController.pageControl.numberOfPages = 2;
+    walkthrough.walkthroughViewController.pageControl.currentPage = 0;
+    walkthrough.walkthroughViewController.pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+    walkthrough.walkthroughViewController.pageControl.currentPageIndicatorTintColor = [UIColor darkGrayColor];
+    [walkthrough.walkthroughViewController.view addSubview:walkthrough.walkthroughViewController.pageControl];
+    
+    [walkthrough show];
+    
     return YES;
 }
 
