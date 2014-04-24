@@ -43,8 +43,6 @@ install_resource()
 }
 install_resource "TDBWalkthrough/Interfaces/TDBFullImage.xib"
 install_resource "TDBWalkthrough/Interfaces/TDBSimpleWhite.xib"
-install_resource "TDBWalkthrough/Interfaces/TDBFullImage.xib"
-install_resource "TDBWalkthrough/Interfaces/TDBSimpleWhite.xib"
 
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 if [[ "${ACTION}" == "install" ]]; then
