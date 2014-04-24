@@ -1,0 +1,14 @@
+PODS:
+  - TDBWalkthrough (1.0.0)
+
+DEPENDENCIES:
+  - TDBWalkthrough (from `git@github.com:TitouanVanBelle/TDBWalkthrough.git`)
+
+EXTERNAL SOURCES:
+  TDBWalkthrough:
+    :git: git@github.com:TitouanVanBelle/TDBWalkthrough.git
+
+SPEC CHECKSUMS:
+  TDBWalkthrough: 00b3f04e8ac3b7762aa3e0972d776760f5a29ba0
+
+COCOAPODS: 0.32.1
