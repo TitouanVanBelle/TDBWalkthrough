@@ -26,6 +26,8 @@
 		F3952FA31909599200C1F58F /* TDBInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = F3952FA21909599200C1F58F /* TDBInterface.m */; };
 		F3952FA719095F8300C1F58F /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = F3952FA519095F8300C1F58F /* first.png */; };
 		F3952FA819095F8300C1F58F /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = F3952FA619095F8300C1F58F /* second.png */; };
+		F3952FAB190984B300C1F58F /* fourth.png in Resources */ = {isa = PBXBuildFile; fileRef = F3952FA9190984B300C1F58F /* fourth.png */; };
+		F3952FAC190984B300C1F58F /* third.png in Resources */ = {isa = PBXBuildFile; fileRef = F3952FAA190984B300C1F58F /* third.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		F3952FA21909599200C1F58F /* TDBInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDBInterface.m; path = ../../Interfaces/TDBInterface.m; sourceTree = "<group>"; };
 		F3952FA519095F8300C1F58F /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = first.png; path = Assets/first.png; sourceTree = SOURCE_ROOT; };
 		F3952FA619095F8300C1F58F /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = second.png; path = Assets/second.png; sourceTree = SOURCE_ROOT; };
+		F3952FA9190984B300C1F58F /* fourth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fourth.png; path = Assets/fourth.png; sourceTree = SOURCE_ROOT; };
+		F3952FAA190984B300C1F58F /* third.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = third.png; path = Assets/third.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +203,8 @@
 		F3952FA419095F7C00C1F58F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F3952FA9190984B300C1F58F /* fourth.png */,
+				F3952FAA190984B300C1F58F /* third.png */,
 				F3952FA519095F8300C1F58F /* first.png */,
 				F3952FA619095F8300C1F58F /* second.png */,
 			);
@@ -282,10 +288,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3952FA719095F8300C1F58F /* first.png in Resources */,
+				F3952FAC190984B300C1F58F /* third.png in Resources */,
 				F32423D1190820B700F3FD4F /* InfoPlist.strings in Resources */,
 				F32423D9190820B700F3FD4F /* Images.xcassets in Resources */,
 				F3952F9D1909569A00C1F58F /* TDBSimpleWhite.xib in Resources */,
 				F3952FA819095F8300C1F58F /* second.png in Resources */,
+				F3952FAB190984B300C1F58F /* fourth.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

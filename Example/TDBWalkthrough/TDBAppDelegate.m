@@ -25,11 +25,15 @@
     
     NSArray *images = [NSArray arrayWithObjects:
                        [UIImage imageNamed:@"first.png"],
-                       [UIImage imageNamed:@"second.png"], nil];
+                       [UIImage imageNamed:@"second.png"],
+                       [UIImage imageNamed:@"third.png"],
+                       [UIImage imageNamed:@"fourth.png"], nil];
     
     NSArray *descriptions = [NSArray arrayWithObjects:
                              @"Find all the electronic music events around you",
                              @"Filter by cost, date and genre to get relevant results",
+                             @"Get all the details for every events in your city",
+                             @"Follow artists to get accurate suggestions in the future",
                              nil];
     
     walkthrough.descriptions = descriptions;
@@ -39,11 +43,13 @@
     
     
     //page control
-    walkthrough.walkthroughViewController.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(100, 518, 120, 30)];
-    walkthrough.walkthroughViewController.pageControl.numberOfPages = 2;
-    walkthrough.walkthroughViewController.pageControl.currentPage = 0;
-    walkthrough.walkthroughViewController.pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
-    walkthrough.walkthroughViewController.pageControl.currentPageIndicatorTintColor = [UIColor darkGrayColor];
+    UIPageControl *pc = [[UIPageControl alloc] initWithFrame:CGRectMake(100, 518, 120, 30)];
+    pc.numberOfPages = 2;
+    pc.currentPage = 0;
+    pc.pageIndicatorTintColor = [UIColor lightGrayColor];
+    pc.currentPageIndicatorTintColor = [UIColor darkGrayColor];
+    
+    walkthrough.walkthroughViewController.pageControl = pc;
     [walkthrough.walkthroughViewController.view addSubview:walkthrough.walkthroughViewController.pageControl];
     
     [walkthrough show];

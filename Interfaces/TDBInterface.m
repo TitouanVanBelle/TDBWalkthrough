@@ -50,9 +50,7 @@
 
     dispatch_async(dispatch_get_main_queue(), ^{
         self.desc.frame = frame;
-    });
-    
-    
+    });    
     
     // image
     self.imageView.contentMode = UIViewContentModeScaleAspectFit;
