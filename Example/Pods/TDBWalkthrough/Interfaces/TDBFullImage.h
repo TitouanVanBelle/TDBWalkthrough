@@ -11,4 +11,6 @@
 
 @interface TDBFullImage : TDBInterface
 
+- (IBAction)getStarted:(UIButton *)sender;
+
 @end

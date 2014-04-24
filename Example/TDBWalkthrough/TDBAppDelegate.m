@@ -96,6 +96,7 @@
     walkthrough.images = images;
     walkthrough.className = @"TDBFullImage";
     walkthrough.nibName = @"TDBFullImage";
+    walkthrough.delegate = self;
     
     walkthrough.walkthroughViewController.view.backgroundColor = [UIColor colorWithRed:0.94 green:0.94 blue:0.94 alpha:1];
     

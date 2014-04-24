@@ -21,7 +21,7 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXy-7F-1gB">
-                    <rect key="frame" x="30" y="476" width="260" height="39"/>
+                    <rect key="frame" x="30" y="486" width="260" height="39"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.086274512110000007" green="0.28627452250000002" blue="0.40784317260000003" alpha="1" colorSpace="deviceRGB"/>
                     <state key="normal" title="Get Started">
@@ -31,6 +31,9 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="2"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="getStarted:" destination="-1" eventType="touchUpInside" id="0bH-0L-VgG"/>
+                    </connections>
                 </button>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAP-RQ-P8f">
                     <rect key="frame" x="20" y="60" width="280" height="39"/>

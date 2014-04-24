@@ -35,4 +35,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+#pragma mark - IBActions
+
+- (IBAction)getStarted:(UIButton *)sender
+{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(didPressButtonWithTag:)]) {
+        [self.delegate didPressButtonWithTag:sender.tag];
+    }
+}
+
 @end
