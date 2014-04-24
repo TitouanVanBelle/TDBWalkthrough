@@ -12,7 +12,7 @@
 
 @interface TDBWalkthroughViewController ()
 
-@property (strong, nonatomic) TDBInterface *currentSlide;
+@property (strong, nonatomic) NSMutableArray *viewControllers;
 
 @end
 
@@ -35,6 +35,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.viewControllers = [[NSMutableArray alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,7 +54,7 @@
     CGFloat height = self.view.frame.size.height;
     
     NSInteger nbSlides = MAX(images.count, descriptions.count);
-
+    
     for (NSInteger i = 0; i < nbSlides; i++) {
         TDBInterface *slide = [[NSClassFromString(className) alloc] initWithNibName:nibName bundle:nil];
         [slide setupWithImage:[images objectAtIndex:i] andText:[descriptions objectAtIndex:i]];
@@ -63,9 +65,7 @@
         
         [self.scrollView addSubview:slide.view];
         
-        if (i == 0) {
-            self.currentSlide = slide;
-        }
+        [self.viewControllers addObject:slide];
     }
     
     self.scrollView.contentSize = CGSizeMake(width * nbSlides, height);
@@ -80,14 +80,6 @@
     CGFloat pageWidth = self.scrollView.frame.size.width;
     NSInteger page = floor((self.scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
     self.pageControl.currentPage = page;
-}
-
-
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-{
-    CGFloat pageWidth = self.scrollView.frame.size.width;
-    NSInteger page = floor((self.scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
-    self.currentSlide = (TDBInterface *)[self.scrollView.subviews[page] nextResponder];
 }
 
 

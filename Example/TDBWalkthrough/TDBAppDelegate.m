@@ -21,8 +21,8 @@
     UIViewController *viewController = [[UIViewController alloc] initWithNibName:nil bundle:nil];
     self.window.rootViewController = viewController;
     
-    [self showTDBSimpleWhite];
-//    [self showTDBFullImage];
+//    [self showTDBSimpleWhite];
+    [self showTDBFullImage];
     return YES;
 }
 
