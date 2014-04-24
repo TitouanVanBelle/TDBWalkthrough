@@ -12,7 +12,7 @@
 
 @interface TDBWalkthroughViewController ()
 
-@property (strong, nonatomic) TDBInterface *currentSlide;
+@property (strong, nonatomic) NSMutableArray *viewControllers;
 
 @end
 
@@ -35,6 +35,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.viewControllers = [[NSMutableArray alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,9 +65,7 @@
         
         [self.scrollView addSubview:slide.view];
         
-        if (i == 0) {
-            self.currentSlide = slide;
-        }
+        [self.viewControllers addObject:slide];
     }
     
     self.scrollView.contentSize = CGSizeMake(width * nbSlides, height);
@@ -83,12 +83,12 @@
 }
 
 
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-{
-    CGFloat pageWidth = self.scrollView.frame.size.width;
-    NSInteger page = floor((self.scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
-    self.currentSlide = (TDBInterface *)[self.scrollView.subviews[page] nextResponder];
-}
-
+//- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+//{
+//    CGFloat pageWidth = self.scrollView.frame.size.width;
+//    NSInteger page = floor((self.scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+//    
+//    UIView *currentlSlide = self.scrollView.subviews[page];
+//}
 
 @end
