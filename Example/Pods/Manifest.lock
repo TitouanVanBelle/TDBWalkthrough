@@ -1,5 +1,7 @@
 PODS:
-  - TDBWalkthrough (1.0.0)
+  - TDBWalkthrough (1.0.0):
+    - TDBWalkthrough/Interfaces
+  - TDBWalkthrough/Interfaces (1.0.0)
 
 DEPENDENCIES:
   - TDBWalkthrough (from `git@github.com:TitouanVanBelle/TDBWalkthrough.git`)
@@ -9,6 +11,6 @@ EXTERNAL SOURCES:
     :git: git@github.com:TitouanVanBelle/TDBWalkthrough.git
 
 SPEC CHECKSUMS:
-  TDBWalkthrough: 00b3f04e8ac3b7762aa3e0972d776760f5a29ba0
+  TDBWalkthrough: 7712fa2fa38212d69e7dee26704c902158a51797
 
 COCOAPODS: 0.32.1
