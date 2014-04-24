@@ -69,8 +69,6 @@
     }
     
     self.scrollView.contentSize = CGSizeMake(width * nbSlides, height);
-    
-    
 }
 
 

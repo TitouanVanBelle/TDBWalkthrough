@@ -1,7 +1,5 @@
-pod "TDBWalkthrough", :path => "../"
+platform :ios, '7.0'
+inhibit_all_warnings!
 
-target "Demo" do
-end
+pod 'TDBWalkthrough', :git => 'git@github.com:TitouanVanBelle/TDBWalkthrough.git'
 
-target "DemoTests" do
-end

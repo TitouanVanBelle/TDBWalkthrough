@@ -19,17 +19,10 @@
 		F32423E2190820B700F3FD4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F32423CA190820B700F3FD4F /* UIKit.framework */; };
 		F32423EA190820B700F3FD4F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F32423E8190820B700F3FD4F /* InfoPlist.strings */; };
 		F32423EC190820B700F3FD4F /* TDBWalkthroughTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F32423EB190820B700F3FD4F /* TDBWalkthroughTests.m */; };
-		F3952F8E1909442800C1F58F /* TDBWalkthrough.m in Sources */ = {isa = PBXBuildFile; fileRef = F3952F8D1909442800C1F58F /* TDBWalkthrough.m */; };
-		F3952F9719094D8100C1F58F /* TDBWalkthroughViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3952F9619094D8100C1F58F /* TDBWalkthroughViewController.m */; };
-		F3952F9D1909569A00C1F58F /* TDBSimpleWhite.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3952F9B1909569A00C1F58F /* TDBSimpleWhite.xib */; };
-		F3952FA01909597900C1F58F /* TDBSimpleWhite.m in Sources */ = {isa = PBXBuildFile; fileRef = F3952F9F1909597900C1F58F /* TDBSimpleWhite.m */; };
-		F3952FA31909599200C1F58F /* TDBInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = F3952FA21909599200C1F58F /* TDBInterface.m */; };
 		F3952FA719095F8300C1F58F /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = F3952FA519095F8300C1F58F /* first.png */; };
 		F3952FA819095F8300C1F58F /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = F3952FA619095F8300C1F58F /* second.png */; };
 		F3952FAB190984B300C1F58F /* fourth.png in Resources */ = {isa = PBXBuildFile; fileRef = F3952FA9190984B300C1F58F /* fourth.png */; };
 		F3952FAC190984B300C1F58F /* third.png in Resources */ = {isa = PBXBuildFile; fileRef = F3952FAA190984B300C1F58F /* third.png */; };
-		F3952FB01909AAC400C1F58F /* TDBFullImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F3952FAE1909AAC400C1F58F /* TDBFullImage.m */; };
-		F3952FB11909AAC400C1F58F /* TDBFullImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3952FAF1909AAC400C1F58F /* TDBFullImage.xib */; };
 		F3952FB41909ACA000C1F58F /* hand.png in Resources */ = {isa = PBXBuildFile; fileRef = F3952FB31909ACA000C1F58F /* hand.png */; };
 /* End PBXBuildFile section */
 
@@ -60,22 +53,10 @@
 		F32423E7190820B700F3FD4F /* TDBWalkthroughTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TDBWalkthroughTests-Info.plist"; sourceTree = "<group>"; };
 		F32423E9190820B700F3FD4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F32423EB190820B700F3FD4F /* TDBWalkthroughTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDBWalkthroughTests.m; sourceTree = "<group>"; };
-		F3952F8C1909442800C1F58F /* TDBWalkthrough.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDBWalkthrough.h; path = ../../Classes/TDBWalkthrough.h; sourceTree = "<group>"; };
-		F3952F8D1909442800C1F58F /* TDBWalkthrough.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDBWalkthrough.m; path = ../../Classes/TDBWalkthrough.m; sourceTree = "<group>"; };
-		F3952F9519094D8100C1F58F /* TDBWalkthroughViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDBWalkthroughViewController.h; path = ../../Classes/TDBWalkthroughViewController.h; sourceTree = "<group>"; };
-		F3952F9619094D8100C1F58F /* TDBWalkthroughViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDBWalkthroughViewController.m; path = ../../Classes/TDBWalkthroughViewController.m; sourceTree = "<group>"; };
-		F3952F9B1909569A00C1F58F /* TDBSimpleWhite.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TDBSimpleWhite.xib; path = ../../Interfaces/TDBSimpleWhite/TDBSimpleWhite.xib; sourceTree = "<group>"; };
-		F3952F9E1909597900C1F58F /* TDBSimpleWhite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDBSimpleWhite.h; path = ../../Interfaces/TDBSimpleWhite/TDBSimpleWhite.h; sourceTree = "<group>"; };
-		F3952F9F1909597900C1F58F /* TDBSimpleWhite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDBSimpleWhite.m; path = ../../Interfaces/TDBSimpleWhite/TDBSimpleWhite.m; sourceTree = "<group>"; };
-		F3952FA11909599200C1F58F /* TDBInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDBInterface.h; path = ../../Interfaces/TDBInterface.h; sourceTree = "<group>"; };
-		F3952FA21909599200C1F58F /* TDBInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDBInterface.m; path = ../../Interfaces/TDBInterface.m; sourceTree = "<group>"; };
 		F3952FA519095F8300C1F58F /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = first.png; path = Assets/first.png; sourceTree = SOURCE_ROOT; };
 		F3952FA619095F8300C1F58F /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = second.png; path = Assets/second.png; sourceTree = SOURCE_ROOT; };
 		F3952FA9190984B300C1F58F /* fourth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fourth.png; path = Assets/fourth.png; sourceTree = SOURCE_ROOT; };
 		F3952FAA190984B300C1F58F /* third.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = third.png; path = Assets/third.png; sourceTree = SOURCE_ROOT; };
-		F3952FAD1909AAC400C1F58F /* TDBFullImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDBFullImage.h; path = ../../Interfaces/TDBFullImage/TDBFullImage.h; sourceTree = "<group>"; };
-		F3952FAE1909AAC400C1F58F /* TDBFullImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDBFullImage.m; path = ../../Interfaces/TDBFullImage/TDBFullImage.m; sourceTree = "<group>"; };
-		F3952FAF1909AAC400C1F58F /* TDBFullImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TDBFullImage.xib; path = ../../Interfaces/TDBFullImage/TDBFullImage.xib; sourceTree = "<group>"; };
 		F3952FB31909ACA000C1F58F /* hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hand.png; path = Assets/hand.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -137,7 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				F3952FA419095F7C00C1F58F /* Assets */,
-				F3952F8B1909440600C1F58F /* Classes */,
 				F32423D5190820B700F3FD4F /* TDBAppDelegate.h */,
 				F32423D6190820B700F3FD4F /* TDBAppDelegate.m */,
 				F32423D8190820B700F3FD4F /* Images.xcassets */,
@@ -175,39 +155,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F3952F8B1909440600C1F58F /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				F3952F8C1909442800C1F58F /* TDBWalkthrough.h */,
-				F3952F8D1909442800C1F58F /* TDBWalkthrough.m */,
-				F3952F9519094D8100C1F58F /* TDBWalkthroughViewController.h */,
-				F3952F9619094D8100C1F58F /* TDBWalkthroughViewController.m */,
-				F3952F941909448800C1F58F /* Interfaces */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
-		F3952F941909448800C1F58F /* Interfaces */ = {
-			isa = PBXGroup;
-			children = (
-				F3952FA11909599200C1F58F /* TDBInterface.h */,
-				F3952FA21909599200C1F58F /* TDBInterface.m */,
-				F3952F981909562300C1F58F /* TDBSimpleWhite */,
-				F3952FB21909AAC800C1F58F /* TDBFullImage */,
-			);
-			name = Interfaces;
-			sourceTree = "<group>";
-		};
-		F3952F981909562300C1F58F /* TDBSimpleWhite */ = {
-			isa = PBXGroup;
-			children = (
-				F3952F9B1909569A00C1F58F /* TDBSimpleWhite.xib */,
-				F3952F9E1909597900C1F58F /* TDBSimpleWhite.h */,
-				F3952F9F1909597900C1F58F /* TDBSimpleWhite.m */,
-			);
-			name = TDBSimpleWhite;
-			sourceTree = "<group>";
-		};
 		F3952FA419095F7C00C1F58F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,16 +165,6 @@
 				F3952FA619095F8300C1F58F /* second.png */,
 			);
 			name = Assets;
-			sourceTree = "<group>";
-		};
-		F3952FB21909AAC800C1F58F /* TDBFullImage */ = {
-			isa = PBXGroup;
-			children = (
-				F3952FAD1909AAC400C1F58F /* TDBFullImage.h */,
-				F3952FAE1909AAC400C1F58F /* TDBFullImage.m */,
-				F3952FAF1909AAC400C1F58F /* TDBFullImage.xib */,
-			);
-			name = TDBFullImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,12 +244,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3952FA719095F8300C1F58F /* first.png in Resources */,
-				F3952FB11909AAC400C1F58F /* TDBFullImage.xib in Resources */,
 				F3952FB41909ACA000C1F58F /* hand.png in Resources */,
 				F3952FAC190984B300C1F58F /* third.png in Resources */,
 				F32423D1190820B700F3FD4F /* InfoPlist.strings in Resources */,
 				F32423D9190820B700F3FD4F /* Images.xcassets in Resources */,
-				F3952F9D1909569A00C1F58F /* TDBSimpleWhite.xib in Resources */,
 				F3952FA819095F8300C1F58F /* second.png in Resources */,
 				F3952FAB190984B300C1F58F /* fourth.png in Resources */,
 			);
@@ -333,12 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3952FA01909597900C1F58F /* TDBSimpleWhite.m in Sources */,
-				F3952FB01909AAC400C1F58F /* TDBFullImage.m in Sources */,
 				F32423D3190820B700F3FD4F /* main.m in Sources */,
-				F3952F8E1909442800C1F58F /* TDBWalkthrough.m in Sources */,
-				F3952F9719094D8100C1F58F /* TDBWalkthroughViewController.m in Sources */,
-				F3952FA31909599200C1F58F /* TDBInterface.m in Sources */,
 				F32423D7190820B700F3FD4F /* TDBAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
