@@ -12,6 +12,6 @@
 
 @interface TDBSimpleWhite : TDBInterface <UIScrollViewDelegate>
 
-- (IBAction)getStarted:(UIButton *)sender;
+- (IBAction)buttonTouchUpInside:(UIButton *)sender;
 
 @end

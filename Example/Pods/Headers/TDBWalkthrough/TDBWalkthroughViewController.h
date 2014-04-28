@@ -1,1 +1,1 @@
-../../TDBWalkthrough/Classes/TDBWalkthroughViewController.h
+../../../../Classes/TDBWalkthroughViewController.h

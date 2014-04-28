@@ -1,1 +1,1 @@
-../../TDBWalkthrough/Interfaces/TDBFullImage.h
+../../../../Interfaces/TDBFullImage.h

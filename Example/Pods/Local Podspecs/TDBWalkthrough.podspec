@@ -10,15 +10,11 @@ Pod::Spec.new do |s|
   s.author           = { "Titouan Van Belle" => "titouan.vanbelle@gmail.com" }
   s.source           = { :git => "https://github.com/TitouanVanBelle/TDBWalkthrough.git", :tag => "1.0.0" }
 
-  s.source_files     = 'Classes/*.{h,m}'
+  s.source_files     = 'Classes/*.{h,m}', 'Interfaces/*.{h,m}'
   s.resources        = 'Interfaces/*.{xib}'
 
   s.platform = :ios, '7.0'
   s.ios.deployment_target = '7.0'
   s.requires_arc = true
-
-  s.subspec 'Interfaces' do |ss|
-    ss.source_files = 'Interfaces/*.{h,m}'
-  end
   
 end

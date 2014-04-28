@@ -9,6 +9,13 @@
 #import "TDBAppDelegate.h"
 #import "TDBWalkthrough.h"
 
+typedef NS_ENUM(NSInteger, TDBButtonTag) {
+    TDBButtonTagGetStarted,
+    TDBButtonTagSignUp,
+    TDBButtonTagSignIn,
+    TDBButtonTagSignInWithFacebook
+};
+
 @implementation TDBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -31,7 +38,26 @@
 
 - (void)didPressButtonWithTag:(NSInteger)tag
 {
-    [[TDBWalkthrough sharedInstance] dismiss];
+    switch (tag) {
+        case TDBButtonTagGetStarted:
+            NSLog(@"Get Started");
+            break;
+
+        case TDBButtonTagSignUp:
+            NSLog(@"Sign Up");
+            break;
+            
+        case TDBButtonTagSignIn:
+            NSLog(@"Sign In");
+            break;
+            
+        case TDBButtonTagSignInWithFacebook:
+            NSLog(@"SignInWithFacebook");
+            break;
+            
+        default:
+            break;
+    }
 }
 
 
