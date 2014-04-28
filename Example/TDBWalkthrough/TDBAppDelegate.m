@@ -28,8 +28,8 @@ typedef NS_ENUM(NSInteger, TDBButtonTag) {
     UIViewController *viewController = [[UIViewController alloc] initWithNibName:nil bundle:nil];
     self.window.rootViewController = viewController;
     
-//    [self showTDBSimpleWhite];
-    [self showTDBFullImage];
+    [self showTDBSimpleWhite];
+
     return YES;
 }
 
@@ -41,6 +41,7 @@ typedef NS_ENUM(NSInteger, TDBButtonTag) {
     switch (tag) {
         case TDBButtonTagGetStarted:
             NSLog(@"Get Started");
+            [[TDBWalkthrough sharedInstance] dismiss];
             break;
 
         case TDBButtonTagSignUp:
@@ -53,6 +54,7 @@ typedef NS_ENUM(NSInteger, TDBButtonTag) {
             
         case TDBButtonTagSignInWithFacebook:
             NSLog(@"SignInWithFacebook");
+            [[TDBWalkthrough sharedInstance] dismiss];
             break;
             
         default:
@@ -71,7 +73,8 @@ typedef NS_ENUM(NSInteger, TDBButtonTag) {
                        [UIImage imageNamed:@"first.png"],
                        [UIImage imageNamed:@"second.png"],
                        [UIImage imageNamed:@"third.png"],
-                       [UIImage imageNamed:@"fourth.png"], nil];
+                       [UIImage imageNamed:@"fourth.png"],
+                       [UIImage imageNamed:@"logo.png"], nil];
     
     NSArray *descriptions = [NSArray arrayWithObjects:
                              @"Find all the electronic music events around you",
@@ -99,37 +102,6 @@ typedef NS_ENUM(NSInteger, TDBButtonTag) {
     [walkthrough show];
 
 }
-
-
-- (void)showTDBFullImage
-{
-    TDBWalkthrough *walkthrough = [TDBWalkthrough sharedInstance];
-    
-    NSArray *images = [NSArray arrayWithObjects:
-                       [UIImage imageNamed:@"hand.png"],
-                       [UIImage imageNamed:@"hand.png"],
-                       [UIImage imageNamed:@"hand.png"],
-                       [UIImage imageNamed:@"hand.png"], nil];
-    
-    NSArray *descriptions = [NSArray arrayWithObjects:
-                             @"Find all the electronic music events around you",
-                             @"Filter by cost, date and genre to get relevant results",
-                             @"Get all the details for every events in your city",
-                             @"Follow artists to get accurate suggestions in the future",
-                             nil];
-    
-    walkthrough.descriptions = descriptions;
-    walkthrough.images = images;
-    walkthrough.className = @"TDBFullImage";
-    walkthrough.nibName = @"TDBFullImage";
-    walkthrough.delegate = self;
-    
-    walkthrough.walkthroughViewController.view.backgroundColor = [UIColor colorWithRed:0.94 green:0.94 blue:0.94 alpha:1];
-    
-    [walkthrough show];
-}
-
-
 
 
 - (void)applicationWillResignActive:(UIApplication *)application

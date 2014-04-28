@@ -15,5 +15,6 @@
 
 
 - (void)setupWithImage:(UIImage *)image andText:(NSString *)text;
+- (void)showButtons;
 
 @end

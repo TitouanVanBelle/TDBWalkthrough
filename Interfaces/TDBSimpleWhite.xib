@@ -7,7 +7,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TDBSimpleWhite">
             <connections>
                 <outlet property="desc" destination="6JK-53-jbw" id="pDC-nh-1hh"/>
+                <outlet property="getStarted" destination="4TK-Lv-VfM" id="8FV-zR-BzU"/>
                 <outlet property="imageView" destination="wgc-Px-reD" id="oNJ-e4-YdC"/>
+                <outlet property="signInWithFacebook" destination="jIY-dJ-2Mh" id="zfg-8S-epc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,14 +23,14 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6JK-53-jbw">
-                    <rect key="frame" x="20" y="429" width="280" height="39"/>
+                    <rect key="frame" x="20" y="444" width="280" height="39"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIY-dJ-2Mh">
-                    <rect key="frame" x="30" y="429" width="260" height="39"/>
+                    <rect key="frame" x="30" y="424" width="260" height="39"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.23921570181846619" green="0.35686275362968445" blue="0.59607845544815063" alpha="1" colorSpace="deviceRGB"/>
                     <state key="normal" title="Sign in with Facebook">
@@ -38,9 +40,12 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="2"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="buttonTouchUpInside:" destination="-1" eventType="touchUpInside" id="dqp-Z5-kbJ"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4TK-Lv-VfM">
-                    <rect key="frame" x="30" y="476" width="260" height="39"/>
+                    <rect key="frame" x="30" y="471" width="260" height="39"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.15294118225574493" green="0.7137255072593689" blue="0.51764708757400513" alpha="1" colorSpace="deviceRGB"/>
                     <state key="normal" title="Get Started">
@@ -50,6 +55,9 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="2"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="buttonTouchUpInside:" destination="-1" eventType="touchUpInside" id="W9n-0T-gS2"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

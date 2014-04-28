@@ -53,11 +53,14 @@
     CGFloat width = self.view.frame.size.width;
     CGFloat height = self.view.frame.size.height;
     
-    NSInteger nbSlides = MAX(images.count, descriptions.count);
+    NSInteger nbSlides = MAX(images.count, descriptions.count) + 1;
     
     for (NSInteger i = 0; i < nbSlides; i++) {
         TDBInterface *slide = [[NSClassFromString(className) alloc] initWithNibName:nibName bundle:nil];
-        [slide setupWithImage:[images objectAtIndex:i] andText:[descriptions objectAtIndex:i]];
+    
+        NSString *text = (i >= descriptions.count) ? @"" : [descriptions objectAtIndex:i];
+        UIImage *image = (i >= images.count) ? nil : [images objectAtIndex:i];
+        [slide setupWithImage:image andText:text];
         
         slide.delegate = [[TDBWalkthrough sharedInstance] delegate];
         
@@ -80,6 +83,18 @@
     CGFloat pageWidth = self.scrollView.frame.size.width;
     NSInteger page = floor((self.scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
     self.pageControl.currentPage = page;
+}
+
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    // Update the page when more than 50% of the previous/next page is visible
+    CGFloat pageWidth = self.scrollView.frame.size.width;
+    NSInteger page = floor((self.scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+    
+    if (page == self.pageControl.numberOfPages) {
+        [(TDBInterface *)self.viewControllers[page] showButtons];
+    }
 }
 
 

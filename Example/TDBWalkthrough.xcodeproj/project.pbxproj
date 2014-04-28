@@ -20,6 +20,7 @@
 		F32423E2190820B700F3FD4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F32423CA190820B700F3FD4F /* UIKit.framework */; };
 		F32423EA190820B700F3FD4F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F32423E8190820B700F3FD4F /* InfoPlist.strings */; };
 		F32423EC190820B700F3FD4F /* TDBWalkthroughTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F32423EB190820B700F3FD4F /* TDBWalkthroughTests.m */; };
+		F35B866E190EB55500DFC75A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F35B866D190EB55500DFC75A /* logo.png */; };
 		F3952FA719095F8300C1F58F /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = F3952FA519095F8300C1F58F /* first.png */; };
 		F3952FA819095F8300C1F58F /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = F3952FA619095F8300C1F58F /* second.png */; };
 		F3952FAB190984B300C1F58F /* fourth.png in Resources */ = {isa = PBXBuildFile; fileRef = F3952FA9190984B300C1F58F /* fourth.png */; };
@@ -56,6 +57,7 @@
 		F32423E7190820B700F3FD4F /* TDBWalkthroughTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TDBWalkthroughTests-Info.plist"; sourceTree = "<group>"; };
 		F32423E9190820B700F3FD4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F32423EB190820B700F3FD4F /* TDBWalkthroughTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDBWalkthroughTests.m; sourceTree = "<group>"; };
+		F35B866D190EB55500DFC75A /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Assets/logo.png; sourceTree = SOURCE_ROOT; };
 		F3952FA519095F8300C1F58F /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = first.png; path = Assets/first.png; sourceTree = SOURCE_ROOT; };
 		F3952FA619095F8300C1F58F /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = second.png; path = Assets/second.png; sourceTree = SOURCE_ROOT; };
 		F3952FA9190984B300C1F58F /* fourth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fourth.png; path = Assets/fourth.png; sourceTree = SOURCE_ROOT; };
@@ -164,6 +166,7 @@
 		F3952FA419095F7C00C1F58F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F35B866D190EB55500DFC75A /* logo.png */,
 				F3952FB31909ACA000C1F58F /* hand.png */,
 				F3952FA9190984B300C1F58F /* fourth.png */,
 				F3952FAA190984B300C1F58F /* third.png */,
@@ -255,6 +258,7 @@
 				F3952FB41909ACA000C1F58F /* hand.png in Resources */,
 				F3952FAC190984B300C1F58F /* third.png in Resources */,
 				F32423D1190820B700F3FD4F /* InfoPlist.strings in Resources */,
+				F35B866E190EB55500DFC75A /* logo.png in Resources */,
 				F32423D9190820B700F3FD4F /* Images.xcassets in Resources */,
 				F3952FA819095F8300C1F58F /* second.png in Resources */,
 				F3952FAB190984B300C1F58F /* fourth.png in Resources */,
