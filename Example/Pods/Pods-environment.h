@@ -12,9 +12,3 @@
 #define COCOAPODS_VERSION_MINOR_TDBWalkthrough 0
 #define COCOAPODS_VERSION_PATCH_TDBWalkthrough 0
 
-// TDBWalkthrough/Interfaces
-#define COCOAPODS_POD_AVAILABLE_TDBWalkthrough_Interfaces
-#define COCOAPODS_VERSION_MAJOR_TDBWalkthrough_Interfaces 1
-#define COCOAPODS_VERSION_MINOR_TDBWalkthrough_Interfaces 0
-#define COCOAPODS_VERSION_PATCH_TDBWalkthrough_Interfaces 0
-

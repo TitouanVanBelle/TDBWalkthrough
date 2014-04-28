@@ -47,7 +47,7 @@
 
 #pragma mark - IBActions
 
-- (IBAction)getStarted:(UIButton *)sender
+- (IBAction)buttonTouchUpInside:(UIButton *)sender
 {
     if (self.delegate && [self.delegate respondsToSelector:@selector(didPressButtonWithTag:)]) {
         [self.delegate didPressButtonWithTag:sender.tag];
