@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.author           = { "Titouan Van Belle" => "titouan.vanbelle@gmail.com" }
   s.source           = { :git => "https://github.com/TitouanVanBelle/TDBWalkthrough.git", :tag => "1.0.1" }
 
-  s.source_files     = 'Classes/*.{h,m}', 'Interfaces/*.{h,m}'
-  s.resources        = 'Interfaces/*.{xib}'
+  s.source_files     = 'Classes/*.{h,m}'
+  s.resources        = 'Classes/*.{xib}'
 
   s.platform = :ios, '7.0'
   s.ios.deployment_target = '7.0'

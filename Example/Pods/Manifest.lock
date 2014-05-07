@@ -1,5 +1,5 @@
 PODS:
-  - TDBWalkthrough (1.0.0)
+  - TDBWalkthrough (1.0.1)
 
 DEPENDENCIES:
   - TDBWalkthrough (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  TDBWalkthrough: 6569c14d5dfb672ed9bd8d401f3781332882ea2d
+  TDBWalkthrough: b7c58debc2656bf7c2e53568b0c705b78303731a
 
 COCOAPODS: 0.32.1
