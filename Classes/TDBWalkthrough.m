@@ -30,6 +30,9 @@
     
     if (self) {
         self.walkthroughViewController = [[TDBWalkthroughViewController alloc] initWithNibName:nil bundle:nil];
+        
+        self.className = @"TDBSimpleWhite";
+        self.nibName = @"TDBSimpleWhite";
     }
     
     return self;

@@ -36,6 +36,8 @@
 {
     [super viewDidLoad];
     
+    
+    
     self.viewControllers = [[NSMutableArray alloc] init];
 }
 
@@ -49,11 +51,11 @@
 
 - (void)setupWithClassName:(NSString *)className nibName:(NSString *)nibName images:(NSArray *)images descriptions:(NSArray *)descriptions
 {
-    // TODO: must depend on the device
+    // Setup ScrollView
     CGFloat width = self.view.frame.size.width;
     CGFloat height = self.view.frame.size.height;
     
-    NSInteger nbSlides = MAX(images.count, descriptions.count) + 1;
+    NSInteger nbSlides = MAX(images.count, descriptions.count);
     
     for (NSInteger i = 0; i < nbSlides; i++) {
         TDBInterface *slide = [[NSClassFromString(className) alloc] initWithNibName:nibName bundle:nil];
@@ -72,6 +74,16 @@
     }
     
     self.scrollView.contentSize = CGSizeMake(width * nbSlides, height);
+    
+    
+    // Adding Page Control
+    self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(100, 518, 120, 30)];
+    self.pageControl.numberOfPages = nbSlides;
+    self.pageControl.currentPage = 0;
+    self.pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+    self.pageControl.currentPageIndicatorTintColor = [UIColor darkGrayColor];
+    
+    [self.view addSubview:self.pageControl];
 }
 
 
@@ -88,12 +100,8 @@
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
-    // Update the page when more than 50% of the previous/next page is visible
-    CGFloat pageWidth = self.scrollView.frame.size.width;
-    NSInteger page = floor((self.scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
-    
-    if (page == self.pageControl.numberOfPages) {
-        [(TDBInterface *)self.viewControllers[page] showButtons];
+    if (self.pageControl.currentPage == self.pageControl.numberOfPages - 1) {
+        [(TDBInterface *)self.viewControllers[self.pageControl.currentPage] showButtons];
     }
 }
 
